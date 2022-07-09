@@ -1,0 +1,9 @@
+/*========== Gallery Rules ==========*/
+.gallery {
+  display: flex;
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+}

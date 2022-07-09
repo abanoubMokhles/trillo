@@ -1,0 +1,56 @@
+/*========== Search Form Component rules ==========*/
+.search {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-too-small) {
+    flex: 0 0 90%;
+    order: 1;
+    margin: 0 auto;
+  }
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 1.2rem 2.4rem;
+    border-radius: 100px;
+    display: inline-block;
+    border: none;
+    width: 90%;
+    transition: all 0.3s;
+    background-color: var(--color-grey-light-2);
+    margin-right: -3.4rem;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3);
+    }
+
+    &::-webkit-input-placeholder,
+    &::placeholder {
+      color: var(--color-grey-light-4);
+    }
+  }
+  &__button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover .search__icon {
+      fill: var(--color-grey-dark-3);
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+  &__icon {
+    width: 2.6rem;
+    height: 2.6rem;
+    fill: var(--color-grey-light-4);
+    transition: all 0.3s;
+  }
+}

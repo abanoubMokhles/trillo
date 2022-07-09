@@ -1,0 +1,19 @@
+/*========== Typography Rules ==========*/
+
+body {
+  font-family: "Open sans", sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+}
+.overview__heading {
+  font-size: 2.4em;
+  font-weight: 300;
+  color: var(--color-grey-dark-2);
+  padding: 1.5rem 3rem;
+  text-transform: capitalize;
+
+  @media only screen and (max-width: $bp-too-small) {
+    font-size: 1.8rem;
+    padding: 1.5rem;
+  }
+}

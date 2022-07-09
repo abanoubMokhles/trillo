@@ -1,0 +1,12 @@
+.btn-txt {
+  color: var(--color-primary);
+  font-size: inherit;
+  text-decoration: none;
+  outline: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+
+  &:focus {
+    animation: pulse 1s infinite;
+  }
+}
